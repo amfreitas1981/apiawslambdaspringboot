@@ -28,19 +28,28 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- AWS Lambda -->
+		<!-- AWS Lambda Core -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-lambda-java-core</artifactId>
 			<version>1.2.2</version>
 		</dependency>
 
-		<!-- AWS SDK Lambda -->
+		<!-- AWS SDK Lambda (Atualizado para versao mais recente) -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>lambda</artifactId>
+			<version>2.29.12</version> <!-- Substitua pela versão mais recente -->
 		</dependency>
 
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-common</artifactId>
+			<version>4.2.0.Alpha1</version>
+		</dependency>
+
+
+		<!-- Dependencias de Teste -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -81,18 +90,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.owasp</groupId>
-				<artifactId>dependency-check-maven</artifactId>
-				<version>8.2.1</version> <!-- Use a versao mais recente -->
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

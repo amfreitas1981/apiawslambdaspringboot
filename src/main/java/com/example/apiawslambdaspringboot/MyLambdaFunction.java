@@ -2,6 +2,7 @@ package com.example.apiawslambdaspringboot;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
+import com.example.apiawslambdaspringboot.context.MockContext;
 import com.example.apiawslambdaspringboot.controller.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
