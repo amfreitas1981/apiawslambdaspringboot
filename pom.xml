@@ -28,20 +28,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- AWS Lambda Core -->
+		<!-- AWS Lambda -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-lambda-java-core</artifactId>
 			<version>1.2.2</version>
 		</dependency>
 
-		<!-- AWS SDK Lambda (Atualizado para versao mais recente) -->
+		<!-- AWS SDK Lambda -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>lambda</artifactId>
 		</dependency>
 
-		<!-- Dependencias de Teste -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
