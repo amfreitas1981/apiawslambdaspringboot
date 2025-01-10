@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = "com.example.apiawslambdaspringboot")
 public class MyLambdaFunction implements RequestHandler<Object, Object> {
 
-    private static ApplicationContext applicationContext;
+    static ApplicationContext applicationContext;
 
     public static void main(String[] args) {
         // Inicia o contexto do Spring
